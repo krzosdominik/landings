@@ -1,0 +1,21 @@
+$gap: 10px;
+$breakpoint: 975px;
+$column: 12;
+
+.row {
+  [class^="col-"] {
+    padding: 20px 10px 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $breakpoint) {
+    display: flex;
+
+    @for $i from 1 through $column {
+      .col-#{$i} {
+        width: 100% / $column * $i;
+      }
+    }
+  }
+}
