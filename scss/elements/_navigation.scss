@@ -7,15 +7,16 @@
 .navigation__list {
   list-style: none;
   display: flex;
+  margin-right: 5px;
 
   .navigation__item {
-    margin: 10px;
+    margin: 15px;
     a {
       text-decoration: none;
       text-transform: uppercase;
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 1px;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 2.4px;
       color: #fff;
     }
   }

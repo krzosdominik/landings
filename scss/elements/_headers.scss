@@ -2,5 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: dodgerblue;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  box-sizing: border-box;
 }
