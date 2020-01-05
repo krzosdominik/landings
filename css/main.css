@@ -419,6 +419,21 @@ footer {
   }
 }
 
+.btn {
+  width: 300px;
+  height: 60px;
+  color: #fff;
+  border-radius: 35px;
+  border: none;
+  background-color: #325dff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
 .page-header {
   display: flex;
   justify-content: space-between;
@@ -591,21 +606,6 @@ footer {
   z-index: 1;
 }
 
-button {
-  width: 300px;
-  height: 60px;
-  color: #fff;
-  border-radius: 35px;
-  border: none;
-  background-color: #325dff;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  position: relative;
-  z-index: 1;
-}
-
 .home::before {
   content: "";
   position: absolute;
@@ -628,6 +628,25 @@ button {
 .page-header--onScroll {
   background-color: rgba(51, 87, 149, 0.9);
   box-shadow: 0px 3px 6px #000;
+}
+
+.second-section__content {
+  align-self: center;
+}
+
+.second-section__content .content__header {
+  font-size: 50px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.second-section__content .content__description {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.16px;
+  line-height: 25px;
+  text-align: left;
+  margin-bottom: 80px;
 }
 
 /*# sourceMappingURL=main.css.map */
