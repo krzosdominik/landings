@@ -11,4 +11,9 @@
   text-transform: uppercase;
   position: relative;
   z-index: 1;
+  margin-bottom: 50px;
+
+  @media (max-width: 320px) {
+      width: 200px;
+  }
 }
