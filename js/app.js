@@ -1,3 +1,4 @@
+const header = document.querySelector('.page-header');
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('.navigation');
 const navItem = document.querySelectorAll('.navigation__item a');
@@ -10,3 +11,12 @@ const handleClick = () => {
 hamburger.addEventListener('click', handleClick);
 
 navItem.forEach(item => item.addEventListener('click', handleClick));
+
+const scrolled = () => {
+    if (window.scrollY >= 200) {
+        header.classList.toggle('page-header--onScroll');
+        document.removeEventListener('scroll', scrolled);
+    }
+};
+
+document.addEventListener('scroll', scrolled);
