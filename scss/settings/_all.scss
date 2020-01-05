@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 0;
   padding: 0;
   max-width: 100vw;
   font-family: 'Open Sans', sans-serif;
@@ -13,4 +13,8 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+header, section, footer {
+  padding: 0 100px;
 }

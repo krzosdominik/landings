@@ -1,4 +1,7 @@
-@import './generic/normalize';
+@import "./generic/normalize";
 
-@import './settings/all';
-@import './settings/grid';
+@import "./settings/all";
+@import "./settings/grid";
+
+@import "./elements/headers";
+@import './elements/navigation';
