@@ -13,18 +13,14 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
-  padding-left: 100px;
-  padding-right: 100px;
-
-  @media (max-width: 750px) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
 header,
 section,
 footer {
-  padding: 0 100px;
+  padding: 0 20px;
+
+  @media (min-width: 1250px) {
+    padding: 0 100px;
+  }
 }
+
+
