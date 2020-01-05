@@ -18,6 +18,15 @@
       font-weight: 500;
       letter-spacing: 2.4px;
       color: #fff;
+      transition: 0.1s 0.1s ease-in-out;
+
+      &:hover {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-top: 3px solid rgb(97, 87, 87);
+        border-bottom: 3px solid #fff;
+        border-radius: 2px;
+      }
     }
   }
 }

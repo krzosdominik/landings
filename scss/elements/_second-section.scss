@@ -1,0 +1,14 @@
+.second-section {
+  min-height: calc(100vh - 70px);
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: no-repeat url("../../assets/second_background.png");
+  background-position: right;
+  background-size: contain;
+}
+
+.page-header--onScroll {
+  background-color: rgba(51, 87, 149, 0.9);
+  box-shadow: 0px 3px 6px #000;
+}
