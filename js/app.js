@@ -20,3 +20,11 @@ const scrolled = () => {
 };
 
 document.addEventListener('scroll', scrolled);
+
+const videoButton = document.querySelector('.video__button');
+
+videoButton.addEventListener('click', event => {
+    event.target.classList.toggle('video__button--initial');
+    event.target.classList.toggle('video__button--playing');
+
+});
