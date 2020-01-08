@@ -1,0 +1,52 @@
+.home {
+  background: no-repeat url(../../assets/hero_background.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+
+  @media (min-width: 1300px) {
+    background-position: center -230px;
+  }
+
+  .home__header {
+    font-size: 100px;
+    font-weight: 300;
+    letter-spacing: -5px;
+    margin-bottom: 0;
+    z-index: 1;
+
+    @media (max-width: 400px) {
+      font-size: 50px;
+      letter-spacing: 0;
+    }
+  }
+
+  .home__description {
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    font-weight: 300;
+    margin-bottom: 60px;
+    z-index: 1;
+  }
+
+  .home__button {
+    @media (max-width: 500px) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  background-color: #335795;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}

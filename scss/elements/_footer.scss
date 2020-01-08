@@ -1,0 +1,14 @@
+.page-footer {
+  height: 80px;
+  background-color: #335795;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+
+  .footer__text {
+    opacity: 0.8;
+    font-weight: 300;
+  }
+}
