@@ -12,8 +12,9 @@
   position: relative;
   z-index: 1;
   margin-bottom: 50px;
+  cursor: pointer;
 
-  @media (max-width: 320px) {
-      width: 200px;
+  @media (max-width: 500px) {
+    width: 190px;
   }
 }
