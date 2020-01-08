@@ -429,11 +429,12 @@ footer {
   position: relative;
   z-index: 1;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 500px) {
   .btn {
-    width: 200px;
+    width: 190px;
   }
 }
 
@@ -862,6 +863,112 @@ footer {
 
 .video__button--playing::before {
   content: url("../../assets/pause.svg");
+}
+
+.projects {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+}
+
+.projects .projects__header {
+  font-size: 35px;
+  font-weight: 300;
+  padding: 0 20px;
+}
+
+@media (min-width: 1250px) {
+  .projects .projects__header {
+    padding: 0 100px;
+  }
+}
+
+.projects .projects__description {
+  letter-spacing: 0.15px;
+  line-height: 25px;
+  margin: 0 50px 120px 50px;
+  padding: 0 20px;
+}
+
+@media (min-width: 1250px) {
+  .projects .projects__description {
+    padding: 0 100px;
+  }
+}
+
+.projects__project {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0;
+  text-align: center;
+  min-height: 100vh;
+  padding: 0 40px;
+}
+
+@media (min-width: 1250px) {
+  .projects__project {
+    padding: 0 120px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .projects__project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.projects__project:nth-child(odd) .project__inner {
+  grid-column: 1;
+  align-self: center;
+}
+
+.projects__project:nth-child(even) {
+  background-position: center;
+}
+
+.projects__project:nth-child(even) .project__inner {
+  grid-column: 2;
+  align-self: center;
+}
+
+.projects__project .project__name {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.projects__project .project__description {
+  font-weight: 300;
+  letter-spacing: 0.16px;
+  line-height: 25px;
+  margin-bottom: 60px;
+}
+
+.project__inner {
+  color: #fff;
+  background-color: rgba(136, 136, 136, 0.6);
+  border-radius: 10px;
+  margin: 40px 0;
+}
+
+.projects__project:nth-of-type(1) {
+  background: no-repeat url("../../assets/project_1.png");
+  background-size: cover;
+}
+
+.projects__project:nth-of-type(2) {
+  background: no-repeat url("../../assets/project_2.png");
+  background-size: cover;
+}
+
+.projects__project:nth-of-type(3) {
+  background: no-repeat url("../../assets/project_3.png");
+  background-size: cover;
 }
 
 .page-footer {
